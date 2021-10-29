@@ -184,7 +184,7 @@ footer{
 footer  a{
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 footer a:hover{
     text-decoration: underline;
