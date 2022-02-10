@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo fixo de Tela</title>
-</head>
-<style>
-    body{
-        height: 100vh;
-        background-color: black;
-        background-image: url('imagens/wallpaper002.jpg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    main{
-        background-color: white;
-        max-width: 400px;
-        padding: 10px;
-        margin: auto;
-        border: 1px solid darkblue;
-        border-radius: 15px;
-    }
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width:400px;
+            background-color: yellow;
 
-</style>
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
 <body>
-    <main>
-        <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consectetur. Tenetur, aspernatur eius. Consequuntur, alias dolorem nobis, voluptas pariatur porro vitae voluptates magni similique dolor vero minus cupiditate voluptatem cumque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa ad inventore qui corporis cum quia, officiis nam? Quasi dignissimos consectetur distinctio. Velit blanditiis, quod architecto porro cum ipsam voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a vitae eaque. Quos quibusdam voluptatum inventore? Reprehenderit alias corrupti explicabo consequuntur? Consectetur maiores minima velit facere esse dolorem iusto aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolores laboriosam laborum unde aliquid dolore magnam adipisci, voluptatum totam vero provident? Autem odit blanditiis possimus, non molestias nostrum similique a.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit. Eius, nihil placeat quibusdam in temporibus, quos, iste earum quaerat id accusamus praesentium nam explicabo magnam unde suscipit amet omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, neque dignissimos maxime qui porro deleniti modi, expedita vel explicabo officiis temporibus et, blanditiis repellat? Ad illo tenetur perferendis libero totam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo non modi at culpa molestias, placeat illo quaerat eveniet. Dolores atque repellendus sint quo iste vitae sequi accusamus dolore, perspiciatis repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum aut dolor qui dolore at harum cumque modi deserunt rerum doloribus, consequuntur tempore saepe quasi nostrum dolorum autem, in ducimus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio quae facilis labore corrupti, reiciendis libero blanditiis sapiente ad sunt animi veniam nostrum beatae dolores harum, quas repellendus numquam dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eum cumque. Repellendus fugiat voluptas quo distinctio iusto, recusandae et delectus pariatur. Tenetur nihil aspernatur aliquid deleniti quae sequi nemo obcaecati?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda veritatis quaerat tenetur voluptate sint nulla est aliquam quam nam, fugit, tempora iusto a! Dolore laboriosam totam perspiciatis iure impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora maiores incidunt delectus nisi odit alias veritatis laborum cumque illo, deserunt architecto animi voluptas corrupti nesciunt consectetur nam, eum amet!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui laborum labore aperiam atque sit velit dicta eaque adipisci et ratione, assumenda asperiores quia, repellendus expedita numquam recusandae excepturi! Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates reiciendis aliquam minima ratione. Ipsa, blanditiis eos qui deleniti, cum assumenda maxime quidem aliquam nesciunt nobis nisi error aperiam quae?</p>
-    </main>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
