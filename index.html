@@ -1,140 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Desafio de Tabelas</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
-            width: 500px;
-            border-collapse: collapse;
+        table.primeiro{
+            width: 300px;
+            height: 200px;
+            margin-bottom: 200px;
         }
-        td, th{
+        td{
             border: 1px solid black;
-            padding: 8px;
+            text-align: center;
         }
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: lightgray;
-        }
-        thead, tfoot{
-            background-color: rgb(63, 62, 62);
-            color: white;
-        }
-        tbody > tr:nth-child(even){
-            background-color: lightgray;
-            text-decoration: underline;
-        }
-        tbody > tr:nth-child(odd){
-            background-color: white;
-            font-weight: bolder;
-        }
-        .num{
-            text-align: right;
+        table.segundo{
+            width: 300px;
+            height: 200px;
         }
     </style>
 </head>
 <body>
-   <h1>Uso de tabelas grandes</h1>
-   <!--
-    ANATOMIA PARA TABELAS GRANDES
-    TABLE
-        CAPTION
-        THEAD
-            TR, TD, TH
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR ,TD ,TH
-   -->
-   <table>
-    <caption>Populaçõa das unidades federativas</caption>
-    <thead>
-        <tr>
-            <th scope="col">Estado</th>
-            <th scope="col" style="width: 50px;">População</th>
-            <!--<th>% da População total</th>-->
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>São Paulo</td>
-            <td class="num">41 262 199</td>
-        </tr>
-        <tr>
-            <td>Minas Gerais</td>
-            <td class="num">19 597 330</td>
-        </tr>
-        <tr>
-            <td>Rio de Janeiro</td>
-            <td class="num">15 989 929</td>
-        </tr>
-        <tr>
-            <td>Bahia</td>
-            <td class="num">14 016 906</td>
-        </tr>
-        <tr>
-            <td>Paraná</td>
-            <td class="num">10 444 526</td>
-        </tr>
-        <tr>
-            <td>Rio Grande do Sul</td>
-            <td class="num">10 693 929</td>
-        </tr>
-        <tr>
-            <td>Alagoas</td>
-            <td class="num">3 120 494</td>
-        </tr>
-        <tr>
-            <td>Piauí</td>
-            <td class="num">3 118 360</td>
-        </tr>
-        <tr>
-            <td>Distrito Federal (Menção honrosa</td>
-            <td class="num">2 570 160</td>
-        </tr>
-        <tr>
-            <td>Mato Grosso do Sul</td>
-            <td class="num">2 449 024</td>
-        </tr>
-        <tr>
-            <td>Sergipe</td>
-            <td class="num">2 068 017</td>
-        </tr>
-        <tr>
-            <td>Rondônia</td>
-            <td class="num">1 562 409</td>
-        </tr>
-        <tr>
-            <td>Tocantins</td>
-            <td class="num">1 383 445</td>
-        </tr>
-        <tr>
-            <td>Acre</td>
-            <td class="num">733 559</td>
-        </tr>
-        <tr>
-            <td>Amapá</td>
-            <td class="num">669 526</td>
-        </tr>
-        <tr>
-            <td>Roraima</td>
-            <td class="num">450 479</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <th scope="row">Total de Habitantes</th>
-            <td class="num">133.250.786</td>
-        </tr>
-    </tfoot>
+    <h1>DESAFIO 1</h1>
+   <table class="primeiro">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2">3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td colspan="3">8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td rowspan="2">10</td>
+        <td colspan="2">11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
    </table>
+    <h1>DESAFIO 2</h1>
+   <table class="segundo">
+    <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+    </tr>
+    <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
         
+    </tr>
+    <tr>
+        <td>J</td>
+        <td>L</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td colspan="4">N</td>
+    </tr>
+    
+   </table>
 </body>
 </html>
